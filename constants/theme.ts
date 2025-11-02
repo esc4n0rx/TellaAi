@@ -51,3 +51,51 @@ export const Fonts = Platform.select({
     mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
   },
 });
+
+// Tella Ai Typography Scale
+export const Typography = {
+  title: {
+    fontSize: 34,
+    fontWeight: '700' as const,
+    lineHeight: 40,
+  },
+  heading: {
+    fontSize: 28,
+    fontWeight: '600' as const,
+    lineHeight: 34,
+  },
+  button: {
+    fontSize: 16,
+    fontWeight: '600' as const,
+    lineHeight: 20,
+  },
+  body: {
+    fontSize: 16,
+    fontWeight: '400' as const,
+    lineHeight: 24,
+  },
+  caption: {
+    fontSize: 14,
+    fontWeight: '400' as const,
+    lineHeight: 18,
+  },
+} as const;
+
+// Tella Ai Spacing
+export const Spacing = {
+  xs: 4,
+  sm: 8,
+  md: 16,
+  lg: 24,
+  xl: 32,
+  xxl: 48,
+} as const;
+
+// Tella Ai Border Radius
+export const BorderRadius = {
+  sm: 8,
+  md: 12,
+  lg: 16,
+  xl: 24,
+  full: 9999,
+} as const;
